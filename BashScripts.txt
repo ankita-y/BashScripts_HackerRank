@@ -1,0 +1,22 @@
+read name
+echo 'Welcome $name'
+
+<-----for loop --->
+for i in {1..99}; do if [[ $i%2 -ne 0 ]]; then echo $i; fe; done
+<-----Given two integers, X and Y, find their sum, difference, product, and quotient.----->
+read X
+read Y
+echo "$(($X + $Y))"
+echo "$(($X - $Y))"
+echo "$(($X * $Y))"
+echo "$(($X / $Y))"
+
+read X
+read Y
+if [[ $X -lt $Y ]]; then echo "X is less than Y"; fi
+if [[ $X -gt $Y ]]; then echo "X is greater than Y"; fi
+if [[ $X -eq $Y ]]; then echo "X is equal to Y"; fi
+
+read s
+if [[ ( "$s" == "Y" ) || ( "$s" == "y" ) ]]; then echo "YES"; fi
+if [[ ( "$s" == "N" ) || ( "$s" == "n" ) ]]; then echo "NO"; fi
